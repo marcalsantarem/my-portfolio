@@ -16,7 +16,8 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 20px;
-    position: sticky;
+    padding-right: 50px;
+    padding-left: 50px;
 }
 
 .header-img-container {
@@ -26,19 +27,35 @@ body {
 }
 
 .header-img {
-    height: 50px;
+    height: 40px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.header-img:hover {
+    -webkit-transform: translateX(10px);
+    -ms-transform: translateX(10px);
+    -o-transform: translateX(10px);
+    transform: translateX(10px);
+    -webkit-box-shadow: 0 18px 24px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0 18px 24px rgba(0, 0, 0, 0.15);
+    -o-box-shadow: 0 18px 24px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 18px 24px rgba(0, 0, 0, 0.15);
 }
 
 .header-menu {
     display: flex;
-    gap: 22px;
+    gap: 32px;
 }
 
 .header-menu-item {
     font-family: 'Sarala', sans-serif;
     color: #FFF2E7;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .content {
@@ -61,7 +78,7 @@ body {
 }
 
 .content-main-text-title {
-    font-family: 'Righteous', cursive;
+    font-family: 'Roboto', cursive;
     font-weight: 400;
     font-size: 64px;
     color: #FFF2E7;
@@ -88,12 +105,32 @@ body {
     align-self: center;
 }
 
+.content-main-tex-btn:hover {
+    background-color: rgba(236, 214, 196, 0.53);
+}
+
 .content-main-text-img {
     height: 280px;
     border: none;
     box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
     border-radius: 40px;
     border: 4px solid;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.content-main-text-img:hover {
+    -webkit-transform: translateX(-15px);
+    -ms-transform: translateX(-15px);
+    -o-transform: translateX(-15px);
+    transform: translateX(-15px);
+    -webkit-box-shadow: 0 18px 24px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0 18px 24px rgba(0, 0, 0, 0.15);
+    -o-box-shadow: 0 18px 24px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 18px 24px rgba(0, 0, 0, 0.15);
 }
 
 .content-sec {
