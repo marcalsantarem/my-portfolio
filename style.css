@@ -1,12 +1,4 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-}
-
 body {
-    font-size: 100%;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='hexagons' fill='%239C92AC' fill-opacity='0.25' fill-rule='nonzero'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"), linear-gradient(to right top, #343a40, #2b2c31, #211f22, #151314, #000000);
 }
 
@@ -14,57 +6,10 @@ body {
     --box-color: #0d1117;
 }
 
-.header {
-    display: flex;
-    background-color: var(--box-color);
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding: 13px;
-    padding-right: 50px;
-    padding-left: 50px;
-    position: sticky !important;
-    top: 0;
-    border-bottom: 0.6px solid #FFF2E7;
-}
-
-.header-img-container {
-    display: flex;
-    gap: 14px;
-    align-items: center;
-}
-
-.header-img {
-    height: 40px;
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    -ms-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-}
-
-.header-img:hover {
-    -webkit-transform: translateX(10px);
-    -ms-transform: translateX(10px);
-    -o-transform: translateX(10px);
-    transform: translateX(10px);
-    -webkit-box-shadow: 0 18px 24px rgba(0, 0, 0, 0.15);
-    -moz-box-shadow: 0 18px 24px rgba(0, 0, 0, 0.15);
-    -o-box-shadow: 0 18px 24px rgba(0, 0, 0, 0.15);
-    box-shadow: 0 18px 24px rgba(0, 0, 0, 0.15);
-}
-
-.header-menu {
-    display: flex;
-    gap: 32px;
-}
-
-.header-menu-item {
+.header-item {
     font-family: 'Sarala', sans-serif;
-    color: #FFF2E7;
+    color: #f8f9fa;
     font-weight: 400;
-    font-size: 16px;
-    cursor: pointer;
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
@@ -72,11 +17,11 @@ body {
     transition: all 0.3s ease-in-out;
 }
 
-.header-menu-item:hover {
-    -webkit-transform: translateY(-5px);
-    -ms-transform: translateY(-5px);
-    -o-transform: translateY(-5px);
-    transform: translateY(-5px);
+.header-item:hover {
+    -webkit-transform: translateY(-3px);
+    -ms-transform: translateY(-3px);
+    -o-transform: translateY(-3px);
+    transform: translateY(-3px);
 }
 
 .content {
@@ -167,31 +112,18 @@ body {
     box-shadow: 0 18px 24px rgba(0, 0, 0, 0.15);
 }
 
-.content-social-container {
-    padding: 10px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    gap: 2px;
-}
+
 
 .content-social-icon {
     font-size: 24px;
-    color: #ECD6C4;
+    color: #f8f9fa;
 }
 
 .content-social-icon:hover {
     color: rgba(236, 214, 196, 0.53);
 }
 
-.content-sec {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    margin-top: 12px;
-}
+
 
 .content-sec-title {
     border-top: 0.6px solid #FFF2E7;
@@ -215,9 +147,7 @@ body {
     padding-left: 20px;
 }
 
-.content-sec-list-container {
-    width: 80%;
-}
+
 
 .content-sec-p,
 .content-sec-list-item {
@@ -228,52 +158,7 @@ body {
     width: 80%;
 }
 
-.content-sec-list {
-    padding-left: 50px;
-    padding-bottom: 10px;
-    list-style: none;
-}
 
-.content-sec-list-item-obs-p {
-    font-size: 18px;
-    color: #FFF2E7;
-}
-
-.content-sec-list-item-obs {
-    font-size: 14px;
-    color: #FFF2E7;
-}
-
-.portfolio-table {    
-  text-align: center;
-  table-layout: fixed;
-}
-
-.portfolio-table tr {
-    border: 0.6px solid #FFF2E7;
-    
-}
-
-.portfolio-item {
-    padding: 20px;
-    margin: 20px;
-    font-size: 18px;
-    color: #FFF2E7;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    overflow: hidden;
-}
-
-.portfolio-item p {
-    font-size: 18px;
-    color: #FFF2E7;
-
-}.portfolio-item a {
-    font-size: 18px;
-    color: #FFF2E7;
-
-}
 
 .footer {
     padding: 10px;  
