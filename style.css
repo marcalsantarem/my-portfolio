@@ -9,6 +9,11 @@ body {
     --box-color: #0d1117;
 }
 
+.font-roboto {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
 .header-item {
     font-family: 'Sarala', sans-serif;
     color: #f8f9fa;
