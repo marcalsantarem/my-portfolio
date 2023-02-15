@@ -14,6 +14,12 @@ body {
     font-weight: 400;
 }
 
+
+.font-sarala {
+    font-family: 'Sarala', sans-serif;
+    font-weight: 400;
+}
+
 .header-item {
     font-family: 'Sarala', sans-serif;
     color: #f8f9fa;
@@ -188,5 +194,11 @@ body {
 }
 
 .span-cv {
-    padding-bottom: 3px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.title-cv {
+    padding-bottom: 15px;
+    padding-top: 10px;
 }
