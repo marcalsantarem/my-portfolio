@@ -186,3 +186,7 @@ body {
 .photo {
     max-width: 280px;
 }
+
+.span-cv {
+    padding-bottom: 3px;
+}
