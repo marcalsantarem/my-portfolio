@@ -35,13 +35,17 @@
                 <div class="row">
                     <div class="col-md-4 pt-4">
                         <div class="card shadow-sm">
-                            <img class="card-img-top" style="max-width: 100%; height: 200px;" src="assets/img/portfolio/portfolio.png"></svg>
+                            <img class="card-img-top" style="max-width: 100%; height: 200px; border: 2px solid;" src="assets/img/portfolio/portfolio.png"></svg>
                             <div class="card-body">
                                 <div class="card-text"><strong>Portfólio</strong></div>
-                                <div class="card-text">Essa própria página. Desenvolvida usando HTML, CSS, JavaScript e Bootstrap 5</div>
+                                <div class="card-text">Essa própria página. Desenvolvida usando HTML, CSS, JavaScript e Bootstrap 5.</div>
+                                <br class="d-xs-none">
+                                <br class="d-xs-none">
+                                <br class="d-xs-none">
+                                <br class="d-xs-none">
                                 <div class="d-flex justify-content-between align-items-center pt-3">
                                     <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">Repositório</button>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary" id="btn-repo-portfolio">Repositório</button>
                                         <button type="button" class="btn btn-sm btn-outline-secondary disabled">Acessar online</button>
                                     </div>
                                 </div>
@@ -50,14 +54,16 @@
                     </div>
                     <div class="col-md-4 pt-4">
                         <div class="card shadow-sm">
-                            <img class="card-img-top" style="width: 100%; height: 200px;" src="assets/img/portfolio/ping-pong.png"></svg>
+                            <img class="card-img-top" style="width: 100%; height: 200px; border: 2px solid;" src="assets/img/portfolio/senha.png"></svg>
                             <div class="card-body">
-                                <div class="card-text"><strong>Ping-Pong</strong></div>
-                                <div class="card-text">Descrição</div>
+                                <div class="card-text"><strong>Gerador de Senha</strong></div>
+                                <div class="card-text">Gerador de senha utilizando HTML, CSS e JavaScript. Possui configuração para o tamanho e tipos de caracteres a usar na senha gerada.</div>
+                                <br class="d-xs-none">
+                                <br class="d-xs-none">
                                 <div class="d-flex justify-content-between align-items-center pt-3">
                                     <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">Repositório</button>
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">Acessar online</button>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary" id="btn-repo-senha">Repositório</button>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary" id="btn-online-senha">Acessar online</button>
                                     </div>
                                 </div>
                             </div>
@@ -65,14 +71,14 @@
                     </div>
                     <div class="col-md-4 pt-4">
                         <div class="card shadow-sm">
-                            <img class="card-img-top" style="width: 100%; height: 200px;" src="https://picsum.photos/200/300"></svg>
+                            <img class="card-img-top" style="width: 100%; height: 200px; border: 2px solid;" src="assets/img/portfolio/vendas.png"></svg>
                             <div class="card-body">
-                                <div class="card-text"><strong>Nome do projeto</strong></div>
-                                <div class="card-text">Descrição</div>
+                                <div class="card-text"><strong>Listagem de vendas</strong></div>
+                                <div class="card-text">Listagem de vendas utilizando React e TypeScript. Possui implementado também o backend utilizando Spring Boot, porém não está online. Para gerar a listagem, pega os dados a partir de outro repositório que funciona como uma API REST fake.</div>
                                 <div class="d-flex justify-content-between align-items-center pt-3">
                                     <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">Repositório</button>
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">Acessar online</button>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary" id="btn-repo-vendas">Repositório</button>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary" id="btn-online-vendas">Acessar online</button>
                                     </div>
                                 </div>
                             </div>
@@ -80,17 +86,18 @@
                     </div>
                   </div>
                   <!-- SEGUNDA LINHA DO PORTFOLIO -->
-                  <div class="row">
+                  <div class="row pb-2">
                     <div class="col-md-4 pt-4">
                         <div class="card shadow-sm">
-                            <img class="card-img-top" style="width: 100%; height: 200px;" src="https://picsum.photos/200/300"></svg>
+                            <img class="card-img-top" style="width: 100%; height: 200px; border: 2px solid;" src="assets/img/portfolio/convidados.png"></svg>
                             <div class="card-body">
-                                <div class="card-text"><strong>Nome do projeto</strong></div>
-                                <div class="card-text">Descrição</div>
+                                <div class="card-text"><strong>Lista de Convidados HTML</strong></div>
+                                <div class="card-text">Lista de convidados utilizando HTML, CSS e JavaScript. Salva os dados (convidados) na localstorage do navegador.</div>
+                                <br class="d-xs-none">
                                 <div class="d-flex justify-content-between align-items-center pt-3">
                                     <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">Repositório</button>
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">Acessar online</button>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary" id="btn-repo-convidados">Repositório</button>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary" id="btn-online-convidados">Acessar online</button>
                                     </div>
                                 </div>
                             </div>
@@ -98,22 +105,22 @@
                     </div>
                     <div class="col-md-4 pt-4">
                         <div class="card shadow-sm">
-                            <img class="card-img-top" style="width: 100%; height: 200px;" src="https://picsum.photos/200/300"></svg>
+                            <img class="card-img-top" style="width: 100%; height: 200px; border: 2px solid;" src="assets/img/portfolio/ping-pong.png"></svg>
                             <div class="card-body">
-                                <div class="card-text"><strong>Nome do projeto</strong></div>
-                                <div class="card-text">Descrição</div>
+                                <div class="card-text"><strong>Ping-Pong HTML</strong></div>
+                                <div class="card-text">Jogo de ping-pong que roda no browser, desenvolvido com HTML, CSS e JavaScript. Utiliza um elemento canvas para desenhar o campo e os objetos do jogo.</canvas></div>
                                 <div class="d-flex justify-content-between align-items-center pt-3">
                                     <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">Repositório</button>
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">Acessar online</button>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary" id="btn-repo-ping-pong">Repositório</button>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary" id="btn-online-ping-pong">Acessar online</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 pt-4">
+                    <div class="col-md-4 pt-4 d-none">
                         <div class="card shadow-sm">
-                            <img class="card-img-top" style="width: 100%; height: 200px;" src="https://picsum.photos/200/300"></svg>
+                            <img class="card-img-top" style="width: 100%; height: 200px; border: 2px solid;" src="https://picsum.photos/200/300"></svg>
                             <div class="card-body">
                                 <div class="card-text"><strong>Nome do projeto</strong></div>
                                 <div class="card-text">Descrição</div>
@@ -130,7 +137,7 @@
             </div>
         </div>
     </main>
-    <script src="index.js"></script>
+    <script src="portfolio.js"></script>
     <script src="https://kit.fontawesome.com/66dfb94009.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>

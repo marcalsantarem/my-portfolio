@@ -1,6 +1,7 @@
+// Botão de Download do CV
 const btnDownload = document.querySelector('#cv-download-btn');
 btnDownload.addEventListener('click', () => {
-    const url = 'cv/cv.pdf';
-    const win = window.open(url, '_blank');
+    let url = 'cv/cv.pdf';
+    let win = window.open(url, '_blank');
     win.focus();
 });
