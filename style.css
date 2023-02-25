@@ -1,3 +1,4 @@
+/* COMMON DEFINITIONS */
 body {
     background-image: url(assets/img/main_bg.png), linear-gradient(to right bottom, #2f3134, rgb(33, 35, 41), #2c292d, #232122, #2e2b2b);
     background-attachment: fixed;
@@ -5,25 +6,8 @@ body {
     background-repeat: no-repeat;
 }
 
-:root {
-    --box-color: #0d1117;
-}
-
-.font-roboto {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-}
-
-
-.font-sarala {
-    font-family: 'Sarala', sans-serif;
-    font-weight: 400;
-}
-
+/* HEADER */
 .header-item {
-    font-family: 'Sarala', sans-serif;
-    color: #f8f9fa;
-    font-weight: 400;
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
@@ -38,167 +22,34 @@ body {
     transform: translateY(-3px);
 }
 
-
-.content-container {    
-    background-color: var(--box-color);
-    border-radius: 25px;
-    width: 70%;
-    margin: 0 auto;
-    border: 0.6px solid #FFF2E7;
-    padding: 20px;
-    margin-bottom: 40px;
-    padding-top: 20px;
-}
-
-.content-main {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    padding-top: 20px;
-}
-
-.content-main-text {
-    display: flex;
-    flex-direction: column;
-    gap: 22px;
-}
-
-.content-main-text-title {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    font-size: 64px;
-    color: #FFF2E7;
-    justify-content: center;
-}
-
-.content-main-text-subtitle {
-    font-family: 'Garamond', sans-serif;
-    font-weight: 400;
-    font-size: 24px;
-    color: #ECD6C4;
-}
-
-.content-main-tex-btn {
-    background-color: #ECD6C4;
-    width: 180px;
-    height: 50px;
-    border: none;
-    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 16px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    font-size: 18px;
-    color: var(--box-color);
-    align-self: center;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.content-main-tex-btn:hover {
-    background-color: rgba(236, 214, 196, 0.53);
+/* INDEX PAGE */
+.profile-pic {
+    max-width: 280px;
 }
 
 .content-main-text-img {
-    height: 280px;
-    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 7%;
-    border: 0.6px solid #FFF2E7;
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    -ms-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
+    -webkit-transition: transform 0.3s ease-in-out;
+    -moz-transition: transform 0.3s ease-in-out;
+    -o-transition: transform 0.3s ease-in-out;
+    -ms-transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
 }
 
 .content-main-text-img:hover {
-    -webkit-transform: translateX(-15px);
-    -ms-transform: translateX(-15px);
-    -o-transform: translateX(-15px);
-    transform: translateX(-15px);
-    -webkit-box-shadow: 0 18px 24px rgba(0, 0, 0, 0.15);
-    -moz-box-shadow: 0 18px 24px rgba(0, 0, 0, 0.15);
-    -o-box-shadow: 0 18px 24px rgba(0, 0, 0, 0.15);
-    box-shadow: 0 18px 24px rgba(0, 0, 0, 0.15);
+    -webkit-transform: scale(1.15);
+    -moz-transform: scale(1.15);
+    -ms-transform: scale(1.15);
+    -o-transform: scale(1.15);
+    transform: scale(1.15);
 }
-
-
 
 .content-social-icon {
     font-size: 24px;
-    color: #f8f9fa;
+    color: white;
 }
 
 .content-social-icon:hover {
     color: rgba(236, 214, 196, 0.53);
 }
 
-
-
-.content-sec-title {
-    border-top: 0.6px solid #FFF2E7;
-    padding-top: 10px;
-    font-family: 'Garamond', sans-serif;
-    font-weight: 400;
-    font-size: 28px;
-    color: #FFF2E7;
-    margin-bottom: 16px;
-}
-
-.content-sec-subtitle {
-    border-top: 0.6px solid #FFF2E7;
-    padding-top: 10px;
-    font-family: 'Garamond', sans-serif;
-    font-weight: 400;
-    font-size: 22px;
-    color: #FFF2E7;
-    margin-bottom: 16px;
-    align-self: flex-start;
-    padding-left: 20px;
-}
-
-
-
-.content-sec-p,
-.content-sec-list-item {
-    font-family: 'Garamond', sans-serif;
-    font-weight: 400;
-    font-size: 20px;
-    color: #FFF2E7;
-    width: 80%;
-}
-
-
-
-.footer {
-    padding: 10px;  
-    border-top: 0.6px solid #FFF2E7;
-    background-color: var(--box-color);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-}
-
-.footer-copyrights {    
-    font-family: 'Roboto', sans-serif;
-    font-size: 12px;
-    color: #ECD6C4;
-}
-
-.photo {
-    max-width: 280px;
-}
-
-.span-cv {
-    padding-top: 2px;
-    padding-bottom: 2px;
-}
-
-.title-cv {
-    padding-bottom: 15px;
-    padding-top: 10px;
-}
+/* PORTFOLIO PAGE */
