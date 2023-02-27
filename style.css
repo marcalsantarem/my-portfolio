@@ -1,11 +1,3 @@
-/* COMMON DEFINITIONS */
-body {
-    background-image: url(assets/img/main_bg.png), linear-gradient(to right bottom, #2f3134, rgb(33, 35, 41), #2c292d, #232122, #2e2b2b);
-    background-attachment: fixed;
-    background-position: center center;
-    background-repeat: no-repeat;
-}
-
 /* ANIMATIONS */
 .transform-10 {
     -webkit-transition: transform 0.3s ease-in-out;
